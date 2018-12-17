@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="Menu_pane" fx:id="Menu_Pane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#Pressed" prefHeight="768.0" prefWidth="1024.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+   <children>
+      <Label fx:id="Title" layoutX="271.0" layoutY="119.0" prefHeight="146.0" prefWidth="497.0" text=" STEALTH">
+         <font>
+            <Font name="Arial" size="93.0" />
+         </font>
+      </Label>
+      <VBox id="login" fx:id="login" alignment="BASELINE_CENTER" fillWidth="false" layoutX="339.0" layoutY="384.0" prefHeight="155.0" prefWidth="327.0" spacing="30.0" visible="false">
+         <children>
+            <Label prefHeight="43.0" prefWidth="358.0" text="    Enter your name">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <TextField fx:id="NameField" pickOnBounds="false" prefHeight="31.0" prefWidth="198.0" promptText="Andrew Chen" />
+            <Button fx:id="confirm" contentDisplay="CENTER" mnemonicParsing="false" onAction="#confirmClick" text="Confirm">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <VBox id="mainmenu" fx:id="mainmenu" alignment="CENTER" layoutX="339.0" layoutY="314.0" prefHeight="200.0" prefWidth="327.0" spacing="40.0">
+         <children>
+            <Button fx:id="start" mnemonicParsing="false" onAction="#startClick" prefHeight="0.0" prefWidth="108.0" text="Single">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="Multi" mnemonicParsing="false" onAction="#multiClick" prefHeight="30.0" prefWidth="100.0" text="Multi">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="helpButton" mnemonicParsing="false" onAction="#helpClick" prefHeight="30.0" prefWidth="100.0" text="Help">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="exit" mnemonicParsing="false" onAction="#closeApp" prefHeight="30.0" prefWidth="100.0" text="Exit">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <VBox id="helpmenu" fx:id="helpmenu" alignment="TOP_CENTER" layoutX="240.0" layoutY="14.0" prefHeight="628.0" prefWidth="575.0" visible="false">
+         <children>
+            <Label alignment="CENTER" prefHeight="183.0" prefWidth="575.0" text="Help">
+               <font>
+                  <Font name="Arial" size="85.0" />
+               </font>
+            </Label>
+            <Label prefHeight="51.0" prefWidth="90.0" text=" Coin">
+               <font>
+                  <Font name="Arial" size="26.0" />
+               </font>
+            </Label>
+            <Label prefHeight="47.0" prefWidth="464.0" text="  Collect more coins to gain more scores">
+               <font>
+                  <Font name="Arial" size="26.0" />
+               </font>
+            </Label>
+            <Label prefHeight="49.0" prefWidth="77.0" text=" Key">
+               <font>
+                  <Font name="Arial" size="26.0" />
+               </font>
+            </Label>
+            <Label text="Collect the correct key to open the door">
+               <font>
+                  <Font name="Arial" size="26.0" />
+               </font>
+            </Label>
+            <Label text="Door">
+               <font>
+                  <Font name="Arial" size="26.0" />
+               </font>
+            </Label>
+            <Label text="There is a beautiful world behind it">
+               <font>
+                  <Font name="Arial" size="26.0" />
+               </font>
+            </Label>
+            <Label prefHeight="33.0" prefWidth="463.0" text="  But you need a correct key to open it">
+               <font>
+                  <Font name="Arial" size="26.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="38.0" prefWidth="575.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="-20.0" layoutY="7.0" prefHeight="34.0" prefWidth="575.0" text="  1/2">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="next" contentDisplay="CENTER" mnemonicParsing="false" onAction="#nextClick" text="Next Page">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Button>
+                  <Pane prefHeight="100.0" prefWidth="77.0" />
+                  <Button fx:id="back" contentDisplay="CENTER" mnemonicParsing="false" onAction="#backClick" text="Back">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Button>
+                  <Pane prefHeight="100.0" prefWidth="65.0" />
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#previousClick" text="Previous Page">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox id="helpmenu" fx:id="helpmenu_2" alignment="TOP_CENTER" layoutX="240.0" layoutY="14.0" prefHeight="628.0" prefWidth="575.0" visible="false">
+         <children>
+            <Label alignment="CENTER" prefHeight="183.0" prefWidth="575.0" text="Help">
+               <font>
+                  <Font name="Arial" size="85.0" />
+               </font>
+            </Label>
+            <Label prefHeight="51.0" prefWidth="121.0" text="Power">
+               <font>
+                  <Font name="Arial" size="26.0" />
+               </font>
+            </Label>
+            <Label prefHeight="47.0" prefWidth="464.0" text="Give you one of the power below">
+               <font>
+                  <Font name="Arial" size="26.0" />
+               </font>
+            </Label>
+            <Label prefHeight="29.0" prefWidth="464.0" text="1. Fire Ball">
+               <font>
+                  <Font name="Arial" size="26.0" />
+               </font>
+            </Label>
+            <Label prefHeight="0.0" prefWidth="464.0" text="2. Ice Wall">
+               <font>
+                  <Font name="Arial" size="26.0" />
+               </font>
+            </Label>
+            <Label prefHeight="49.0" prefWidth="147.0" text="X mark">
+               <font>
+                  <Font name="Arial" size="26.0" />
+               </font>
+            </Label>
+            <Label text="X mark can be dropped anywhere on your path">
+               <font>
+                  <Font name="Arial" size="26.0" />
+               </font>
+            </Label>
+            <Label prefHeight="33.0" prefWidth="545.0" text="Teleport back to X mark whenever you want">
+               <font>
+                  <Font name="Arial" size="26.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="38.0" prefWidth="575.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="-20.0" layoutY="7.0" prefHeight="34.0" prefWidth="575.0" text="  2/2">
+                     <font>
+                        <Font name="AR DESTINE" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#nextClick" text="Next Page">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Button>
+                  <Pane prefHeight="100.0" prefWidth="77.0" />
+                  <Button fx:id="back1" contentDisplay="CENTER" mnemonicParsing="false" onAction="#backClick" text="Back">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Button>
+                  <Pane prefHeight="100.0" prefWidth="65.0" />
+                  <Button fx:id="previous" contentDisplay="CENTER" mnemonicParsing="false" onAction="#previousClick" text="Previous Page">
+                     <font>
+                        <Font name="Arial" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

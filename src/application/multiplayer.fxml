@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="game_pane" fx:id="game_Pane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#GamePressed" onKeyReleased="#GameReleased" prefHeight="768.0" prefWidth="1024.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MultiplayerController">
+   <children>
+      <Canvas id="canvas" fx:id="canvas" height="669.0" layoutX="-1.0" layoutY="55.0" width="1024.0" />
+      <Label fx:id="Score" layoutX="95.0" layoutY="9.0" prefHeight="36.0" prefWidth="90.0" text="number">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="9.0" prefHeight="35.0" prefWidth="81.0" text="Score :">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="776.0" layoutY="719.0" prefHeight="35.0" prefWidth="81.0" text="Power :">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="PauseStart" layoutX="922.0" layoutY="14.0" mnemonicParsing="false" onAction="#PauseAndStart" prefHeight="35.0" prefWidth="81.0" text="Start" visible="false">
+         <font>
+            <Font name="AR DESTINE" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="PowerLabel" layoutX="872.0" layoutY="725.0" prefHeight="27.0" prefWidth="90.0" text="None">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="Score1" layoutX="306.0" layoutY="719.0" prefHeight="36.0" prefWidth="90.0" text="Key :">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="KeyLabel" layoutX="367.0" layoutY="721.0" prefHeight="36.0" prefWidth="90.0" text="No">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="NameLabel" layoutX="675.0" layoutY="22.0" prefHeight="36.0" prefWidth="148.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="719.0" prefHeight="35.0" prefWidth="81.0" text="Life  X">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="LifeLabel" layoutX="121.0" layoutY="719.0" prefHeight="36.0" prefWidth="90.0" text="number">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="firstCountLabel" layoutX="457.0" layoutY="290.0" prefHeight="119.0" prefWidth="285.0" text="Ready" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="47.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondCountLabel" layoutX="488.0" layoutY="9.0" prefHeight="28.0" prefWidth="46.0" text="123">
+         <font>
+            <Font name="Arial" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

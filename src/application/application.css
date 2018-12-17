@@ -1,0 +1,24 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#Menu_pane {
+    -fx-background-image: url("images/background.jpg");
+    -fx-background-color: #000000;
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 1024 768;
+}
+.label{
+	-fx-text-fill: #FFFFFF;
+}
+#game_pane{
+	-fx-background-color: #000000;
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 1024 768;
+}
+#final{
+	-fx-background-image: url("images/background.jpg");
+	-fx-background-color: #000000;
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 1024 768;
+}
+#Died{
+	-fx-text-fill: #FF0000;
+}
